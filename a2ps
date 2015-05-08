@@ -1,0 +1,2 @@
+縦に120行のコードが入る
+a2ps input file -R -o output.ps --column=1 -l 120
