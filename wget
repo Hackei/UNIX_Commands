@@ -1,0 +1,4 @@
+複数のファイルを一括でダウンロードする。（http認証つき）
+親ディレクトリの参照なしで同じディレクトリ構成でwgetを使う。
+
+wget -np -m --http-user=USER --http-password=PASS URL
