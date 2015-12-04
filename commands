@@ -1,0 +1,32 @@
+縦に120行のコードが入る
+a2ps input file -R -o output.ps --column=1 -l 120
+
+ログインシェル変更
+chsh [ユーザー名]
+新しいシェル[~~~]: 
+
+
+ディレクトリーのファイル数表示
+ls -F | grep -v / | wc -l
+
+
+＜リモート先へのファイル転送＞
+scp ファイル名　s1190085@sshgate.u-aizu.ac.jp:ディレクトリ名
+
+
+ファイル内のダブルクォーテーションを全て削除
+sed -i -e "s/\"//g" Data2.txt
+
+ファイル内の<TAB>をカンマに変換する
+cat TEXT FILE | tr "\t" "," > CSV FILE
+
+ディレクトリーのすべてのコード数を取得する
+wc -l $(find . -name “*”)
+
+ディレクトリ内のファイル数を表示する
+ls -1|wc -l
+
+複数のファイルを一括でダウンロードする。（http認証つき）
+親ディレクトリの参照なしで同じディレクトリ構成でwgetを使う。
+
+wget -np -m --http-user=USER --http-password=PASS URL
